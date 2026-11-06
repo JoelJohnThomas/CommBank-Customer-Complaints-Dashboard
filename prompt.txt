@@ -1,0 +1,23 @@
+Role: You are a senior BI developer building a single-file, interactive HTML dashboard.
+
+Task: Using the three attached inputs, build one self-contained HTML file that reproduces the wireframe layout with live, filterable visualisations driven by the dataset.
+
+Inputs:
+- Dataset (CSV): complaint records. Treat each column as a candidate dimension or measure.
+- Wireframe (image): the required layout and component placement. Follow it.
+- Logo (image): place in the header and build the palette around it.
+
+Requirements:
+- Layout matches the wireframe: header with logo and title, filter bar, six KPI cards, request-type chart, complaint-trend line, state map, annual breakdown bar.
+- Every filter and chart click cross-filters all panels. KPIs recompute live.
+- Derive the KPIs from the data (for example total, timely-response rate, disputed rate) and state which ones you chose.
+- Responsive to mobile. Accessible: labels, keyboard support, WCAG AA contrast.
+
+Constraints:
+- One HTML file, no build step. Data embedded, no external data calls.
+- Vanilla JS plus one charting library from a CDN. No front-end frameworks.
+- Do not invent data. If a field is ambiguous, pick an interpretation and note it.
+
+Output:
+- The complete HTML file, ready to open in a browser.
+- A short note listing the KPIs chosen and any assumptions made.
